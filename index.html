@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f0f1a, #1c1c3c);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      background: rgba(31, 0, 97, 0.322);
+      padding: 60px 40px;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      font-size: 3.2em;
+      margin-bottom: 30px;
+      letter-spacing: 2px;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .play-btn {
+      background-color: rgba(85, 19, 238, 0.548);
+      color: white;
+      padding: 15px 50px;
+      font-size: 1.2em;
+      border: 1px solid white;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .play-btn:hover {
+      background-color: rgb(66, 10, 196);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 2.2em;
+      }
+
+      .play-btn {
+        padding: 12px 30px;
+        font-size: 1em;
+      }
+
+      .container {
+        padding: 40px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <button class="play-btn" onclick="startGame()">Play</button>
+  </div>
+
+  <script>
+    function startGame() {
+      // Replace with your game file path
+      window.location.href = "ticktak.html";
+    }
+  </script>
+</body>
+</html>
+
+
